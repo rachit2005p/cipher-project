@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+
+    <!-- 🌈 CSS Styling -->
+    <style>
+        body {
+            background-color: #f0f8ff; /* light blue background */
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: darkblue; /* changes heading text color */
+        }
+
+        p {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My Website</h1>
+
+    <p>This is a simple paragraph describing the purpose of this page. It's a great place to start learning HTML!</p>
+
+    <img src="https://via.placeholder.com/300" alt="Sample Image" width="300">
+
+    <h2>Contact Me</h2>
+
+    <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

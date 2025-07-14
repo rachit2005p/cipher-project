@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Navigation</title>
+</head>
+<body>
+
+    <div id="container">
+        <h2 id="title">DOM Example</h2>
+        <p>This is a paragraph.</p>
+        <span>Another element</span>
+    </div>
+
+    <script>
+        // Get the <h2> element
+        const title = document.getElementById("title");
+
+        // 🔼 parentNode: log the parent of h2 (which is #container)
+        console.log("Parent Node:", title.parentNode);
+
+        // 🔽 childNodes: log all child nodes of #container (includes text nodes!)
+        const container = document.getElementById("container");
+        console.log("Child Nodes of container:", container.childNodes);
+
+        // 🔁 nextSibling: log the node after <h2> (might be a text node!)
+        console.log("Next Sibling of h2:", title.nextSibling);
+
+        // ✅ If you want the next element node only (skip text nodes), use:
+        console.log("Next Element Sibling of h2:", title.nextElementSibling);
+    </script>
+
+</body>
+</html>
